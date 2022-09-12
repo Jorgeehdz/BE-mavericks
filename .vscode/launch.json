@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch CsMaverickApplication",
+            "request": "launch",
+            "mainClass": "com.mavericks.springjwt.CsMaverickApplication",
+            "projectName": "spring-boot-security-jwt"
+        },
+        {
+            "type": "java",
+            "name": "Launch SpringBootSecurityJwtApplication",
+            "request": "launch",
+            "mainClass": "com.mavericks.springjwt.SpringBootSecurityJwtApplication",
+            "projectName": "spring-boot-security-jwt"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-SpringBootSecurityJwtApplication<spring-boot-security-jwt>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.bezkoder.springjwt.SpringBootSecurityJwtApplication",
+            "projectName": "spring-boot-security-jwt",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
