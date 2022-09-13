@@ -9,10 +9,10 @@
 		<version>2.7.3</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.bezkoder</groupId>
+	<groupId>com.mavericks</groupId>
 	<artifactId>spring-boot-security-jwt</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>spring-boot-security-jwt</name>
+	<name>be-mavericks</name>
 	<description>Demo for Maveriks Case Study CRUD</description>
 
 	<properties>
@@ -62,6 +62,11 @@
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+    		<groupId>org.springframework.boot</groupId>
+    		<artifactId>spring-boot-starter-mail</artifactId>
 		</dependency>
 	</dependencies>
 
