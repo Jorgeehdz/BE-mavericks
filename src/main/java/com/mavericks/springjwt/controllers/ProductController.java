@@ -42,6 +42,11 @@ public class ProductController {
         return productRepository.findAll();
     }
 
+    @GetMapping("/list/available")
+    public List<Product> getProductsAvailable() {
+        return productRepository.getProductsAvailable();
+    }
+
     @GetMapping("/id/{pid}")
     public ResponseEntity<?> getProductById(@PathVariable("pid") Long pid) {
         Product product = productRepository.getProductById(pid);

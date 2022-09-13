@@ -47,6 +47,11 @@ public class OrderController {
         return orderRepository.findAll();
     }
 
+    @GetMapping("/list/{uid}")
+    public List<Order> getOrdersByUserId(@PathVariable("uid") Long uid) {
+        return orderRepository.getOrdersByUserId(uid);
+    }
+
     @GetMapping("/{oid}")
     public ResponseEntity<Order> getOrderById(@PathVariable("oid") Long oid) {
         Order order = orderRepository.getOrderById(oid);

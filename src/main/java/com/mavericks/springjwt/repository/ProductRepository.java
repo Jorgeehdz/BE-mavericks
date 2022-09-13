@@ -1,5 +1,6 @@
 package com.mavericks.springjwt.repository;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -21,4 +22,7 @@ public interface ProductRepository extends JpaRepository<Product, Long> {
 
     @Query("select p from Product p where p.id = ?1")
     Product getProductByIdToOrder(Long pid);
+
+    @Query(value = "SELECT * FROM products where order_id IS NULL", nativeQuery = true)
+    List<Product> getProductsAvailable();
 }

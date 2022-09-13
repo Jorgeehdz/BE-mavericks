@@ -21,7 +21,7 @@ public class Order {
 
     private String name;
 
-    private String status;
+    private String status = "Created";
 
     private String details;
 
